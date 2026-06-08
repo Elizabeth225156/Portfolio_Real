@@ -7,9 +7,9 @@ const Astronaut = () => {
   return (
     <primitive 
         object={scene}
-        position={[6, -1, 0]}        // further right and lower
+        position={[6, -1, 0]}
         rotation={[0.6, -0.6, 0.1]}
-        scale={0.5}                  // smaller
+        scale={0.5}
     />
   );
 };

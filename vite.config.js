@@ -2,10 +2,10 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
-export default defineConfig({
-  base: "/Portfolio_Real/",
+export default defineConfig(({ command }) => ({
+  base: command === 'build' ? '/Portfolio_Real/' : '/',
   plugins: [
     react(),
     tailwindcss(),
   ],
-})
+}))

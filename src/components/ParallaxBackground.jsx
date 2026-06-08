@@ -37,7 +37,7 @@ const ParallaxBackground = () => {
                     x: mountainClose,
                     }}
                 />
-                {/* LAYER 4 */}
+                {/* LAYER 4
                 <motion.div className="absolute inset-0 -z-210"
                 style={{
                     backgroundImage:"url(/assets/bgGround.png)",
@@ -45,7 +45,7 @@ const ParallaxBackground = () => {
                     backgroundSize: "cover",
                     y: ground,
                     }}
-                />
+                /> */}
                 {/* LAYER 5
                 <motion.div className="absolute inset-0 -z-10"
                 style={{
