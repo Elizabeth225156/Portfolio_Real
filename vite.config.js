@@ -7,3 +7,8 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [react(), tailwindcss()],
 })
+
+export default defineConfig({
+  base: "/Portfolio_Real/",  // must match exactly
+  plugins: [react()],
+})
