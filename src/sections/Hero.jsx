@@ -3,7 +3,7 @@ import { Suspense } from "react";
 import HeroText from "../components/HeroText";
 import ParallaxBackground from "../components/ParallaxBackground";
 import Astronaut from "../components/Astronaut";
-import { OrbitControls } from '@react-three/drei';
+import { OrbitControls, Html } from '@react-three/drei';
 
 const Hero = () => {
     return (
@@ -20,10 +20,9 @@ const Hero = () => {
                     <ambientLight intensity={2} />
                     <directionalLight position={[5, 5, 5]} intensity={2} />
                     <Suspense fallback={
-                        <mesh position={[6, -3, 0]}>
-                            <sphereGeometry args={[0.5, 16, 16]} />
-                            <meshStandardMaterial color="#888" wireframe />
-                        </mesh>
+                        <Html position={[6, -3, 0]} center>
+                            <p className="text-neutral-500 text-sm">3D model loading...</p>
+                        </Html>
                     }>
                         <Astronaut />
                     </Suspense>
