@@ -16,3 +16,5 @@ const Astronaut = () => {
 };
 
 export default Astronaut;
+
+useGLTF.preload(`${import.meta.env.BASE_URL}models/GatewayCore.glb`);
