@@ -14,7 +14,7 @@ const ParallaxBackground = () => {
                 {/* Background Sky */}
                 <div className="absolute inset-0 w-full h-screen -z-50"
                 style={{
-                    backgroundImage:"url(/assets/bgBack.png)",
+                    backgroundImage:"url(${import.meta.env.BASE_URL}assets/assets/bgBack.png)",
                     backgroundPosition: "bottom",
                     backgroundSize: "cover",
                     }}
@@ -22,7 +22,7 @@ const ParallaxBackground = () => {
                 {/* LAYER 2 */}
                 <motion.div className="absolute inset-0 -z-40"
                 style={{
-                    backgroundImage:"url(/assets/bgMiddle.png)",
+                    backgroundImage:"url(${import.meta.env.BASE_URL}assets/assets/bgMiddle.png)",
                     backgroundPosition: "bottom",
                     backgroundSize: "cover",
                     y: mountainFar,
@@ -31,7 +31,7 @@ const ParallaxBackground = () => {
                 {/* LAYER 3 */}
                 <motion.div className="absolute inset-0 -z-30"
                 style={{
-                    backgroundImage:"url(/assets/bgFront.png)",
+                    backgroundImage:"url(${import.meta.env.BASE_URL}assets/assets/bgFront.png)",
                     backgroundPosition: "bottom",
                     backgroundSize: "cover",
                     x: mountainClose,

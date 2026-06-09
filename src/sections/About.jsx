@@ -13,7 +13,7 @@ const About = () => {
                 {/* Grid 1 */}
                 <div className="flex items-end grid-default-color grid-1">
                     <img
-                        src="assets/aboutMeBackground.jpg"
+                        src={`${import.meta.env.BASE_URL}assets/aboutMeBackground.jpg`}
                         className="absolute inset-0 w-full h-full object-cover object-center"
                     />
                     <div className="z-10">

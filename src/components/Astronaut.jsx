@@ -1,8 +1,9 @@
 import React from 'react';
 import { useGLTF } from "@react-three/drei";
 
+
 const Astronaut = () => {
-  const { scene } = useGLTF("/models/GatewayCore.glb");
+  const { scene } = useGLTF(import.meta.env.BASE_URL + "models/GatewayCore.glb");
 
   return (
     <primitive 

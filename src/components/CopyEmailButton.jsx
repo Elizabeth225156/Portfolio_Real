@@ -31,7 +31,7 @@ const CopyEmailButton = () => {
                 exit={{opacity:0, y:-10}}
                 transition={{duration:0.1, ease:"easeInOut"}}>
                     <img
-                        src="assets/copy-done.svg"
+                        src={`${import.meta.env.BASE_URL}assets/copy-done.svg`}
                         alt="Copied"
                         className="w-5"
                         />
@@ -45,7 +45,7 @@ const CopyEmailButton = () => {
                 exit={{opacity:0}}
                 transition={{duration:0.1}}>
                     <img
-                        src="assets/copy.svg"
+                        src={`${import.meta.env.BASE_URL}assets/copy.svg`}
                         className="w-5"
                         alt="copy icon"
                     />
