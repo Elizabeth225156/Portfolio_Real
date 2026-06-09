@@ -1,8 +1,9 @@
 import { Canvas } from "@react-three/fiber";
+import { Suspense } from "react";
 import HeroText from "../components/HeroText";
 import ParallaxBackground from "../components/ParallaxBackground";
 import Astronaut from "../components/Astronaut";
-import { OrbitControls, Stage } from '@react-three/drei';
+import { OrbitControls } from '@react-three/drei';
 
 const Hero = () => {
     return (
@@ -18,7 +19,14 @@ const Hero = () => {
                     >
                     <ambientLight intensity={2} />
                     <directionalLight position={[5, 5, 5]} intensity={2} />
-                    <Astronaut />
+                    <Suspense fallback={
+                        <mesh position={[6, -3, 0]}>
+                            <sphereGeometry args={[0.5, 16, 16]} />
+                            <meshStandardMaterial color="#888" wireframe />
+                        </mesh>
+                    }>
+                        <Astronaut />
+                    </Suspense>
                     <OrbitControls 
                         enableZoom={false}
                         enablePan={false}
